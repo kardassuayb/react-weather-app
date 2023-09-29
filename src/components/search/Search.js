@@ -7,7 +7,7 @@ const Search = ({ onSearchChange }) => {
 
   const loadOptions = (inputValue) => {
     return fetch(
-      `${geoApiUrl}/cities?minPopulation=1000000&namePrefix=${inputValue}`,
+      `${geoApiUrl}/cities?minPopulation=100000&namePrefix=${inputValue}`,
       geoApiOptions
     )
       .then((response) => response.json())
@@ -32,8 +32,8 @@ const Search = ({ onSearchChange }) => {
   return (
     <div>
       <AsyncPaginate
-        placeholder="Search for city"
-        debounceTimeout={600} //? İki fetch isteği arasında beklenen süre. 600 ms geçmeden yeni istek gönderemezsiniz.
+        placeholder="Enter city name.."
+        debounceTimeout={1000} //? İki fetch isteği arasında beklenen süre. 600 ms geçmeden yeni istek gönderemezsiniz.
         value={search}
         onChange={handleOnChange}
         loadOptions={loadOptions}
