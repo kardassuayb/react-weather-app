@@ -30,8 +30,6 @@ function App() {
       .catch((err) => console.log(err));
   };
 
-  console.log(forecastWeather);
-
   return (
     <div className="container">
       <Search onSearchChange={handleOnSearchChange} />
