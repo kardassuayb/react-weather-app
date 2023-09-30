@@ -48,7 +48,30 @@ const ForecastWeather = ({ data }) => {
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
-            <AccordionItemPanel></AccordionItemPanel>
+            <AccordionItemPanel>
+              <div className="daily-details-grid">
+                <div className="daily-details-grid-item">
+                  <label>Hissedilen</label>
+                  <label>{item.main.feels_like}°C</label>
+                </div>
+                <div className="daily-details-grid-item">
+                  <label>Basınç</label>
+                  <label>{item.main.pressure} hPa</label>
+                </div>
+                <div className="daily-details-grid-item">
+                  <label>Nem</label>
+                  <label>{item.main.humidity}%</label>
+                </div>
+                <div className="daily-details-grid-item">
+                  <label>Kapalılık</label>
+                  <label>{item.clouds.all}%</label>
+                </div>
+                <div className="daily-details-grid-item">
+                  <label>Rüzgar</label>
+                  <label>{item.wind.speed} m/s</label>
+                </div>
+              </div>
+            </AccordionItemPanel>
           </AccordionItem>
         ))}
       </Accordion>

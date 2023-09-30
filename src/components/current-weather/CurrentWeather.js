@@ -28,7 +28,7 @@ const CurrentWeather = ({ data }) => {
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Rüzgar</span>
-            <span className="parameter-value">{data.wind.speed}m/s</span>
+            <span className="parameter-value">{data.wind.speed} m/s</span>
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Nem</span>
@@ -36,7 +36,7 @@ const CurrentWeather = ({ data }) => {
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Basınç</span>
-            <span className="parameter-value">{data.main.pressure}hPa</span>
+            <span className="parameter-value">{data.main.pressure} hPa</span>
           </div>
         </div>
       </div>

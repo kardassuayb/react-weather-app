@@ -1,5 +1,8 @@
+.accordion {
+  margin-top: 15px;
+}
 .title {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 700;
   margin: 5px;
 }
@@ -13,6 +16,9 @@
   cursor: pointer;
   font-size: 14px;
   padding: 5px 20px;
+}
+.daily-item label {
+  cursor: pointer;
 }
 .icon-small {
   width: 40px;
@@ -31,4 +37,26 @@
 }
 .min-max {
   color: #757575;
+}
+.daily-details-grid {
+  grid-row-gap: 0;
+  grid-column-gap: 15px;
+  row-gap: 0;
+  column-gap: 100px;
+  display: grid;
+  flex: 1 1;
+  grid-template-columns: auto auto;
+  padding: 5px 33px;
+}
+.daily-details-grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+}
+.daily-details-grid-item label:first-child {
+  color: #757575;
+}
+.daily-details-grid-item label:last-child {
+  color: #212121;
 }
