@@ -1,3 +1,27 @@
+In this weather application that I created using React.JS, showing current and daily forecast data;
+
+I used the AsyncPaginate component to create a search bar that offers city suggestions when the user starts typing data;
+https://www.npmjs.com/package/react-select-async-paginate
+
+I processed the data typing to the SearchBar by the users and the data I received from the API with the useState hook.
+
+I used the Accordion component to show daily weather forecasts;
+https://www.npmjs.com/package/react-accessible-accordion
+
+I fetched the city data used in SearchBar from RapidAPI/geoDB cities.
+
+I fetched instant and daily weather data from OpenWeatherMap.
+
+I used the Javascript fetch method in the entire data retrieval process.
+
+I used basic CSS for styling
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
