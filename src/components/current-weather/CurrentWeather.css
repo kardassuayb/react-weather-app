@@ -25,6 +25,7 @@
   font-size: 14px;
   line-height: 1;
   margin: 0;
+  text-transform: capitalize;
 }
 .weather-icon {
   width: 100px;
